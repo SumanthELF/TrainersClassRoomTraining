@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Redmi {
 
-	@Test(groups="functionality")
+	@Test(groups="functionality",enabled=false)
 	public void launchRedmi() {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();

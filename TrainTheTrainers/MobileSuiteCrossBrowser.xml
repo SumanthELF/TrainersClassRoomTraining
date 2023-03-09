@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="testUrl" value="https://www.facebook.com"></parameter>
+	<parameter name="username" value="admin"></parameter>
+	<parameter name="password" value="manager"></parameter>
+
+	<test thread-count="5" name="ChromeTest">
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="message" value="It is executing in Chrome"></parameter>
+		<classes>
+			<class name="mobiles.Vivo" />
+			<class name="mobiles.Apple" />
+			<class name="mobiles.Samsung" />
+			<class name="mobiles.Redmi" />
+			<class name="mobiles.Oneplus" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="FirefoxTest">
+		<parameter name="browserName" value="firefox"></parameter>
+		<parameter name="message" value="It is executing in firefox"></parameter>
+		<classes>
+			<class name="mobiles.Vivo" />
+			<class name="mobiles.Apple" />
+			<class name="mobiles.Samsung" />
+			<class name="mobiles.Redmi" />
+			<class name="mobiles.Oneplus" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

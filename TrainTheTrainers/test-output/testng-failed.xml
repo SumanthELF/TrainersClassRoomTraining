@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scripting.TC_ShoopperLogin_001">
+      <class name="crossBrowser.Swiggy">
         <methods>
+          <include name="foodPanda"/>
           <include name="browserSetup"/>
-          <include name="logoutOfApp"/>
-          <include name="browserTearDown"/>
-          <include name="removeProductFromWishList"/>
-          <include name="loginToApp"/>
         </methods>
-      </class> <!-- scripting.TC_ShoopperLogin_001 -->
+      </class> <!-- crossBrowser.Swiggy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

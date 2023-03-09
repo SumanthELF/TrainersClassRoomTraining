@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Oneplus {
 
-	@Test(groups="integration")
+	@Test(groups="integration",enabled=false)
 	public void launchOneplus() {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();

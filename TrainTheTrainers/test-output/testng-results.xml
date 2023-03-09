@@ -1,126 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Browser Launched Successfully]]>
-    </line>
-    <line>
-      <![CDATA[Browser Window is maximized]]>
-    </line>
-    <line>
-      <![CDATA[Navigated to Home page Successfully]]>
-    </line>
-    <line>
-      <![CDATA[logout]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-02-27T12:07:25 IST" name="Default suite" finished-at="2023-02-27T12:07:43 IST" duration-ms="18473">
+  <suite started-at="2023-03-08T13:06:56 IST" name="Suite" finished-at="2023-03-08T13:08:37 IST" duration-ms="101077">
     <groups>
     </groups>
-    <test started-at="2023-02-27T12:07:25 IST" name="Default test" finished-at="2023-02-27T12:07:43 IST" duration-ms="18473">
-      <class name="scripting.TC_ShoopperLogin_001">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:scripting.TC_ShoopperLogin_001@2525ff7e]" started-at="2023-02-27T12:07:25 IST" name="browserSetup" finished-at="2023-02-27T12:07:26 IST" duration-ms="1533" status="PASS">
+    <test started-at="2023-03-08T13:06:56 IST" name="ChromeTest" finished-at="2023-03-08T13:08:00 IST" duration-ms="64266">
+      <class name="crossBrowser.Zomato">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:crossBrowser.Zomato@13b13b5d]" started-at="2023-03-08T13:06:56 IST" name="browserSetup" finished-at="2023-03-08T13:06:57 IST" duration-ms="1681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[Browser Launched Successfully]]>
-            </line>
-            <line>
-              <![CDATA[Browser Window is maximized]]>
-            </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:scripting.TC_ShoopperLogin_001@2525ff7e]" started-at="2023-02-27T12:07:26 IST" name="loginToApp" finished-at="2023-02-27T12:07:41 IST" duration-ms="15259" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Navigated to Home page Successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="removeProductFromWishList()[pri:0, instance:scripting.TC_ShoopperLogin_001@2525ff7e]" started-at="2023-02-27T12:07:41 IST" name="removeProductFromWishList" finished-at="2023-02-27T12:07:43 IST" duration-ms="1627" status="PASS">
+        <test-method signature="launchZomato()[pri:0, instance:crossBrowser.Zomato@13b13b5d]" started-at="2023-03-08T13:06:57 IST" name="launchZomato" finished-at="2023-03-08T13:07:13 IST" duration-ms="15734" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- removeProductFromWishList -->
-        <test-method is-config="true" signature="logoutOfApp()[pri:0, instance:scripting.TC_ShoopperLogin_001@2525ff7e]" started-at="2023-02-27T12:07:43 IST" name="logoutOfApp" finished-at="2023-02-27T12:07:43 IST" duration-ms="24" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : Are you sure you want to remove this product from your wishlist?}
-  (Session info: chrome=110.0.5481.105): Are you sure you want to remove this product from your wishlist?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'TYSS-SUMANTH', ip: '10.10.20.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.105, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 99ec2353089248a98dede85bf8455878
-*** Element info: {Using=xpath, value=//button[@aria-label='Account settings']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Are you sure you want to remove this product from your wishlist?}
-  (Session info: chrome=110.0.5481.105): Are you sure you want to remove this product from your wishlist?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'TYSS-SUMANTH', ip: '10.10.20.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.105, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 99ec2353089248a98dede85bf8455878
-*** Element info: {Using=xpath, value=//button[@aria-label='Account settings']}
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy14.click(Unknown Source)
-at unitTestingTool.BaseTest.logoutOfApp(BaseTest.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-            <line>
-              <![CDATA[logout]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logoutOfApp -->
-        <test-method is-config="true" signature="browserTearDown()[pri:0, instance:scripting.TC_ShoopperLogin_001@2525ff7e]" started-at="2023-02-27T12:07:43 IST" name="browserTearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1677479863620" status="SKIP">
+        </test-method> <!-- launchZomato -->
+      </class> <!-- crossBrowser.Zomato -->
+      <class name="crossBrowser.Swiggy">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:crossBrowser.Swiggy@355ce81c]" started-at="2023-03-08T13:07:25 IST" name="browserSetup" finished-at="2023-03-08T13:07:26 IST" duration-ms="1306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserTearDown -->
-      </class> <!-- scripting.TC_ShoopperLogin_001 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- browserSetup -->
+        <test-method signature="launchSwiggy()[pri:0, instance:crossBrowser.Swiggy@355ce81c]" started-at="2023-03-08T13:07:26 IST" name="launchSwiggy" finished-at="2023-03-08T13:07:41 IST" duration-ms="14504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSwiggy -->
+      </class> <!-- crossBrowser.Swiggy -->
+      <class name="crossBrowser.FoodPanda">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:crossBrowser.FoodPanda@2892dae4]" started-at="2023-03-08T13:07:13 IST" name="browserSetup" finished-at="2023-03-08T13:07:14 IST" duration-ms="1361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="launchFoodPanda()[pri:0, instance:crossBrowser.FoodPanda@2892dae4]" started-at="2023-03-08T13:07:14 IST" name="launchFoodPanda" finished-at="2023-03-08T13:07:25 IST" duration-ms="10728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFoodPanda -->
+      </class> <!-- crossBrowser.FoodPanda -->
+      <class name="crossBrowser.Dominos">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:crossBrowser.Dominos@29647f75]" started-at="2023-03-08T13:07:41 IST" name="browserSetup" finished-at="2023-03-08T13:07:42 IST" duration-ms="1252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="launchDominos()[pri:0, instance:crossBrowser.Dominos@29647f75]" started-at="2023-03-08T13:07:42 IST" name="launchDominos" finished-at="2023-03-08T13:08:00 IST" duration-ms="17663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDominos -->
+      </class> <!-- crossBrowser.Dominos -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2023-03-08T13:06:56 IST" name="FirefoxTest" finished-at="2023-03-08T13:08:37 IST" duration-ms="101077">
+      <class name="crossBrowser.Zomato">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:crossBrowser.Zomato@1eb5174b]" started-at="2023-03-08T13:06:56 IST" name="browserSetup" finished-at="2023-03-08T13:06:59 IST" duration-ms="3189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="launchZomato()[pri:0, instance:crossBrowser.Zomato@1eb5174b]" started-at="2023-03-08T13:06:59 IST" name="launchZomato" finished-at="2023-03-08T13:07:04 IST" duration-ms="5092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchZomato -->
+      </class> <!-- crossBrowser.Zomato -->
+      <class name="crossBrowser.Swiggy">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:crossBrowser.Swiggy@72cde7cc]" started-at="2023-03-08T13:07:54 IST" name="browserSetup" finished-at="2023-03-08T13:07:56 IST" duration-ms="2633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="launchSwiggy()[pri:0, instance:crossBrowser.Swiggy@72cde7cc]" started-at="2023-03-08T13:07:56 IST" name="launchSwiggy" finished-at="2023-03-08T13:08:24 IST" duration-ms="27222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSwiggy -->
+      </class> <!-- crossBrowser.Swiggy -->
+      <class name="crossBrowser.FoodPanda">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:crossBrowser.FoodPanda@67080771]" started-at="2023-03-08T13:07:04 IST" name="browserSetup" finished-at="2023-03-08T13:07:06 IST" duration-ms="2536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="launchFoodPanda()[pri:0, instance:crossBrowser.FoodPanda@67080771]" started-at="2023-03-08T13:07:06 IST" name="launchFoodPanda" finished-at="2023-03-08T13:07:54 IST" duration-ms="47256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFoodPanda -->
+      </class> <!-- crossBrowser.FoodPanda -->
+      <class name="crossBrowser.Dominos">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:crossBrowser.Dominos@5fd4f8f5]" started-at="2023-03-08T13:08:24 IST" name="browserSetup" finished-at="2023-03-08T13:08:26 IST" duration-ms="2352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="launchDominos()[pri:0, instance:crossBrowser.Dominos@5fd4f8f5]" started-at="2023-03-08T13:08:26 IST" name="launchDominos" finished-at="2023-03-08T13:08:37 IST" duration-ms="10772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDominos -->
+      </class> <!-- crossBrowser.Dominos -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
 </testng-results>

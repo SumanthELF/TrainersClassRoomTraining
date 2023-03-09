@@ -14,7 +14,7 @@ public class Samsung {
 		driver.quit();
 	}*/
 	
-	@Test(groups="smoke")
+	@Test(groups="smoke",enabled=false)
 	public void launchSamsungMobiles() {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class Vivo {
 
-	@Test(groups="integration",dependsOnGroups= "smoke")
+	@Test(groups="integration",dependsOnGroups= "smoke",enabled=false)
 	public void launchVivo() {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
